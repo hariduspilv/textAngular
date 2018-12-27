@@ -37,14 +37,14 @@ var _browserDetect = {
 
 // Global to textAngular to measure performance where needed
 /* istanbul ignore next: untestable browser check */
-var performance = performance || {};
+var taPerformance = performance || {};
 /* istanbul ignore next: untestable browser check */
-performance.now = (function() {
-	return performance.now       ||
-		performance.mozNow    ||
-		performance.msNow     ||
-		performance.oNow      ||
-		performance.webkitNow ||
+taPerformance.now = (function() {
+	return taPerformance.now       ||
+        taPerformance.mozNow    ||
+        taPerformance.msNow     ||
+        taPerformance.oNow      ||
+        taPerformance.webkitNow ||
 		function() { return new Date().getTime(); };
 })();
 // usage is:
